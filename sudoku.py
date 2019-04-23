@@ -5,11 +5,6 @@ import time
 
 
 class Grid:
-    """ data structure change:
-        - added a few constants
-        - uses list instead of dict (self.spots is thus removed)
-        - added self.units as an additional constraint
-    """
 
     def __init__(self, problems=None):
         if problems is None:
@@ -127,12 +122,7 @@ class Solver:
         # return False if none of which is correct
         return False
 
-    """
-    data structure explanation:
-    I store the assigment (sigma) and value directly in a copy of grid.
-    I also implemented what infer should do in consistent,
-    since they have some shared code and I want it to be more efficient.
-    """
+
     # spot should have only one element before calling this function
     @staticmethod
     def consistent(grid, spot):
