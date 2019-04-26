@@ -122,7 +122,6 @@ class Solver:
         # return False if none of which is correct
         return False
 
-
     # spot should have only one element before calling this function
     @staticmethod
     def consistent(grid, spot):
